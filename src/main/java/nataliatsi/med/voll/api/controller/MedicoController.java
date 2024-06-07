@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("medicos")
 public class MedicoController {
@@ -20,4 +22,10 @@ public class MedicoController {
     public void cadastrar(@RequestBody @Valid MedicoDTO dados){
         medicoRepository.save(new Medico(dados));
     }
+
+    @GetMapping
+    public List<Medico> getMedicos(){
+        return medicoRepository.findAll();
+    }
+
 }
