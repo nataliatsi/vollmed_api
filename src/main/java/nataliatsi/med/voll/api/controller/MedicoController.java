@@ -6,6 +6,9 @@ import nataliatsi.med.voll.api.model.Medico;
 import nataliatsi.med.voll.api.model.DadosCadastroMedico;
 import nataliatsi.med.voll.api.repository.MedicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,10 +29,9 @@ public class MedicoController {
     }
 
     @GetMapping
-    public List<DadosListagemMedicos> listar(){
-        return medicoRepository.findAll().stream()
-                .map(DadosListagemMedicos::new)
-                .collect(Collectors.toList());
+    public Page<DadosListagemMedicos> listar(@PageableDefault(size = 10, sort = {"nome"}) Pageable pageable){
+        return medicoRepository.findAll(pageable).map(DadosListagemMedicos::new);
     }
+
 
 }
