@@ -1,6 +1,7 @@
 package nataliatsi.med.voll.api.model;
 
 public record DadosListagemMedicos(
+        Long id,
         String nome,
         String email,
         String crm,
@@ -8,6 +9,6 @@ public record DadosListagemMedicos(
 ) {
 
     public DadosListagemMedicos(Medico medico){
-        this(medico.getNome(), medico.getEmail(), medico.getCrm(), medico.getEspecialidade());
+        this(medico.getId(), medico.getNome(), medico.getEmail(), medico.getCrm(), medico.getEspecialidade());
     }
 }
