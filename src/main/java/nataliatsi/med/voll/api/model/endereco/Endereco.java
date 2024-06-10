@@ -1,4 +1,4 @@
-package nataliatsi.med.voll.api.model;
+package nataliatsi.med.voll.api.model.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
@@ -18,7 +18,7 @@ public class Endereco {
     private String numero;
     private String complemento;
 
-    public Endereco(EnderecoDTO endereco) {
+    public Endereco(DadosEndereco endereco) {
         this.logradouro = endereco.logradouro();
         this.bairro = endereco.bairro();
         this.cep = endereco.cep();
@@ -28,7 +28,7 @@ public class Endereco {
         this.complemento = endereco.complemento();
     }
 
-    public void atualizarDados(EnderecoDTO dados) {
+    public void atualizarDados(DadosEndereco dados) {
         if (dados.logradouro() != null) {
             this.logradouro = dados.logradouro();
         }

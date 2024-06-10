@@ -1,4 +1,4 @@
-package nataliatsi.med.voll.api.model;
+package nataliatsi.med.voll.api.model.medico;
 
 import lombok.Getter;
 

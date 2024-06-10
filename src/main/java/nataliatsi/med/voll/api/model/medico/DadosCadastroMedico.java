@@ -1,10 +1,11 @@
-package nataliatsi.med.voll.api.model;
+package nataliatsi.med.voll.api.model.medico;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import nataliatsi.med.voll.api.model.endereco.DadosEndereco;
 
 public record DadosCadastroMedico(
         @NotBlank
@@ -21,6 +22,6 @@ public record DadosCadastroMedico(
         Especialidade especialidade,
         @NotNull
         @Valid
-        EnderecoDTO endereco
+        DadosEndereco endereco
 ) {
 }
