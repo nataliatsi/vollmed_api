@@ -1,6 +1,5 @@
 package nataliatsi.med.voll.api.model.medico;
 
-import nataliatsi.med.voll.api.model.endereco.DadosEndereco;
 import nataliatsi.med.voll.api.model.endereco.Endereco;
 
 public record DadosDetalhamentoMedico(

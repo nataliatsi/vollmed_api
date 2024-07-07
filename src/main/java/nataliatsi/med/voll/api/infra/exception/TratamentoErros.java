@@ -1,4 +1,4 @@
-package nataliatsi.med.voll.api.infra;
+package nataliatsi.med.voll.api.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
