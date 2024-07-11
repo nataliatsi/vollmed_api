@@ -1,4 +1,4 @@
-package nataliatsi.med.voll.api.model.medico;
+package nataliatsi.med.voll.api.domain.medico;
 
 public record DadosListagemMedicos(
         Long id,

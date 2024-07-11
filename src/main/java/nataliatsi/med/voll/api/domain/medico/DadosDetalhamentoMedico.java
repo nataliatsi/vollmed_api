@@ -1,6 +1,6 @@
-package nataliatsi.med.voll.api.model.medico;
+package nataliatsi.med.voll.api.domain.medico;
 
-import nataliatsi.med.voll.api.model.endereco.Endereco;
+import nataliatsi.med.voll.api.domain.endereco.Endereco;
 
 public record DadosDetalhamentoMedico(
         Long id,

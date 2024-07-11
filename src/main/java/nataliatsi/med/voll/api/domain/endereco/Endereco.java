@@ -1,4 +1,4 @@
-package nataliatsi.med.voll.api.model.endereco;
+package nataliatsi.med.voll.api.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

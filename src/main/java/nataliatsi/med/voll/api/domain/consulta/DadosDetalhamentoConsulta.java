@@ -1,4 +1,4 @@
-package nataliatsi.med.voll.api.model.consulta;
+package nataliatsi.med.voll.api.domain.consulta;
 
 import java.time.LocalDateTime;
 

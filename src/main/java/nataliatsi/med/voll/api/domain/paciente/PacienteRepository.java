@@ -1,4 +1,4 @@
-package nataliatsi.med.voll.api.model.paciente;
+package nataliatsi.med.voll.api.domain.paciente;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

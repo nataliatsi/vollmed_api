@@ -3,7 +3,7 @@ package nataliatsi.med.voll.api.controller;
 import jakarta.validation.Valid;
 import nataliatsi.med.voll.api.infra.security.DadosTokenJWT;
 import nataliatsi.med.voll.api.infra.security.TokenService;
-import nataliatsi.med.voll.api.model.DadosAuth;
+import nataliatsi.med.voll.api.domain.DadosAuth;
 import nataliatsi.med.voll.api.usuario.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

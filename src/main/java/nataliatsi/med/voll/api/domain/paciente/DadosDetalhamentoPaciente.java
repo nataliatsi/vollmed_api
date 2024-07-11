@@ -1,6 +1,6 @@
-package nataliatsi.med.voll.api.model.paciente;
+package nataliatsi.med.voll.api.domain.paciente;
 
-import nataliatsi.med.voll.api.model.endereco.Endereco;
+import nataliatsi.med.voll.api.domain.endereco.Endereco;
 
 public record DadosDetalhamentoPaciente(Long id, String nome, String email, String cpf, String telefone, Endereco endereco) {
 
